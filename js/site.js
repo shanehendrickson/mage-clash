@@ -89,6 +89,7 @@ function getResult() {
   castResultDisplay.innerHTML = castResult
 }
 
+// Test for zero health and end game
 function endGame() {
   if(userHealth == 0){
     modal.classList.add('open');
