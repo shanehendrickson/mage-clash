@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Shane Hendrickson</title>
+    <title>Mage Clash by Shane Hendrickson</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     
-    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c7ed50e499.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/site.css">
     <link rel="icon" type="image/png" href="img/favicon-16x16.png">
@@ -23,7 +23,7 @@
 <!-- ==== Nav Section ==== -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="img/SH_white.svg" class="d-inline-block align-text-bottom" width="30" height="24" alt="Shane Hendrickson Logo"> APP NAME</a>
+          <a class="navbar-brand" href="index.html"><img src="img/SH_white.svg" class="d-inline-block align-text-bottom" width="30" height="24" alt="Shane Hendrickson Logo"> MAGE CLASH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -49,12 +49,71 @@
           </div>
       </div>
   </nav>
+
   <!-- ==== Main Section ==== -->
   <main class="flex-shrink-0">
-    <div class="container">
+    <div class="container mt-5">
+      <div class="row">
+
+        <div id="user-container" class="container side-container col-3">
+          <div class="row">
+            <h2>You cast: <br><span id="user-cast" class="magic-cast"></span></h2>            
+          </div>
+        </div>
+    
+        <div id="center-container" class="container col-6">
+          <div class="row">
+            <div id="magic-container" class="container d-flex justify-content-center p-3">
+              <button id="tree" class='magic-type tree'><i id="tree" class="fa-solid fa-leaf"></i></button>
+              <button id="bolt" class='magic-type bolt'><i id="bolt" class="fa-solid fa-bolt"></i></button>
+              <button id="wind" class='magic-type wind'><i id="wind" class="fa-solid fa-wind"></i></button>
+              <button id="flame" class='magic-type flame'><i id="flame" class="fa-solid fa-fire"></i></button>
+              <button id="wave" class='magic-type wave'><i id="wave" class="fa-solid fa-water"></i></button>
+              
+              
+              
+              
+            </div>
+            <div class="container d-flex justify-content-center">
+              <h3>Cast Result: <span id="cast-result"></span></h3><br></div>
+            
+          </div> <!-- end row -->
+          <div class="row">
+            <div class="container poem-container col-6 d-flex">
+              <p>
+                <span class="wind">wind</span> scatters <span class="wave">wave</span><br>
+                <span class="wave">wave</span> douses <span class="flame">flame</span><br>
+                <span class="flame">flame</span> absorbs <span class="bolt">bolt</span><br>
+                <span class="bolt">bolt</span> splits <span class="tree">tree</span><br>
+                <span class="tree">tree</span> blocks <span class="wind">wind</span><br>
+              </p>
+            </div>
+            
+            <div class="container poem-container col-6 d-flex">
+              <p>
+                <span class="wind">wind</span> snuffs <span class="flame">flame</span><br>
+                <span class="flame">flame</span> burns <span class="tree">tree</span><br>
+                <span class="tree">tree</span> withstands <span class="wave">wave</span><br>
+                <span class="wave">wave</span> disperses <span class="bolt">bolt</span><br>
+                <span class="bolt">bolt</span> rides <span class="wind">wind</span><br>
+              </p>
+            </div>
+
+          </div> <!-- end row -->    
+        </div>
+    
+        <div id="cpu-container" class="side-container col-3">
+          <div class="row">
+            <h2>CPU casts: <br><span id="cpu-cast" class="magic-cast"></span></h2>            
+          </div>
+        </div>
+      </div>
+      
+      
 
     </div>
   </main>
+
   <!-- ==== Footer Section ==== -->
   <footer class="footer mt-auto py-2">
     <div class="container-fluid">
