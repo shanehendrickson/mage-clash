@@ -19,12 +19,12 @@ main>.container {
 }
 
 .side-container {
-  border: red dotted 1px;
+  border: var(--dark-color) solid 2px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 10px;
-  height: 500px;
+  padding-top: 20px;
 }
 
 #magic-container {
@@ -123,7 +123,37 @@ code[class*="language-"],
     word-wrap: break-word;
   }
 
+#modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: .25rem;
+  background-color: white;
+  z-index: 1;
+}
 
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .75);
+  z-index: 1;
+}
+
+#modal.open {
+  display: block;
+}
+
+#overlay.open {
+  display: block;
+}
   
   
   

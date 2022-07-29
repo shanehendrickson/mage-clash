@@ -52,12 +52,25 @@
 
   <!-- ==== Main Section ==== -->
   <main class="flex-shrink-0">
+   
+
+    <div id="overlay"></div>
+    <div id="modal">
+      <h3><span id="clashVictor"></span></h3>
+      <button id="newGame">New Game</button>
+    </div>
+
     <div class="container mt-5">
       <div class="row">
 
         <div id="user-container" class="container side-container col-3">
           <div class="row">
-            <h2>You cast: <br><span id="user-cast" class="magic-cast"></span></h2>            
+            <div class="cast-text col-12">
+              <h2>You cast: <br><span id="user-cast" class="magic-cast"></span></h2>
+            </div>
+            <div class="cast-text col-12">
+              <h2>Health: <br><span id="user-health" class="magic-cast"></span></h2>
+            </div>
           </div>
         </div>
     
@@ -98,17 +111,25 @@
                 <span class="bolt">bolt</span> rides <span class="wind">wind</span><br>
               </p>
             </div>
+            <div class="alert alert-danger">
+              NOTE: Responsive layout coming soon!
+            </div>
 
           </div> <!-- end row -->    
         </div>
     
         <div id="cpu-container" class="side-container col-3">
           <div class="row">
-            <h2>CPU casts: <br><span id="cpu-cast" class="magic-cast"></span></h2>            
+            <div class="cast-text col-12">
+              <h2>CPU casts: <br><span id="cpu-cast" class="magic-cast"></span></h2>            
+            </div>
+            <div class="cast-text col-12">
+              <h2>Health: <br><span id="cpu-health" class="magic-cast"></span></h2>            
+            </div>
           </div>
         </div>
       </div>
-      
+
       
 
     </div>
